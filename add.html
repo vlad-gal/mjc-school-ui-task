@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+</head>
+    <body class="add-color">
+        <header class="header">
+            <div class="container">
+                <div class="container-logo">
+                    <span class="material-icons logo md-36">
+                        menu
+                    </span>
+                    <p class="logo-title">Logo</p>
+                </div>
+                <div class="container-search">
+                    <form id="search-form" method="GET" action="">
+                        <input class="input input-search" name="search" placeholder="Search by item name"/>
+                        <select class="select">
+                            <option selected>All Categories</option>
+                            <option>Health</option>
+                            <option>Sport</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="container-info">
+                    <div class="icons">
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            local_grocery_store
+                            </span>
+                        </a>
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            favorite
+                            </span>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="#" class="link">Login</a>
+                        <label class="delimiter"> | </label>
+                        <a href="#" class="link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="add-header">
+            <p class="add-title">Add New Coupon</p>
+        </div>
+        <main class="main-add">
+            <div class="add-container"> 
+                <form class="form-add" method="POST" action="">
+                    <table class="table-padding-top">
+                        <tbody>
+                            <tr>
+                                <td class="add-padding" >
+                                    <div class="flex-td">
+                                        <label for="company" class="label-register">Company</label>
+                                        <input type="text" name="company" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex-td">
+                                        <label for="item-name" class="label-register">Item Name</label>
+                                        <input type="text" name="item-name" class="input input-form-register"/>       
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="add-padding">
+                                    <div class="flex-td">
+                                        <label for="category" class="label-register">Category</label>
+                                        <select class="select-add input input-form-register">
+                                            <option selected>Category Name</option>
+                                            <option>Category Name</option>
+                                            <option>Category Name</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td rowspan="2">
+                                    <div class="flex-td flex-fill">
+                                        <label for="short-description" class="label-register">Short description</label>
+                                        <textarea name="short-description" class="input input-form-register text-area"></textarea>
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="add-padding">
+                                    <div class="flex-td">
+                                        <label for="data" class="label-register">Valid to</label>
+                                        <input type="datetime-local" value="2021-03-21T08:30" name="data" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="add-padding">
+                                    <div class="flex-td">
+                                        <label for="price" class="label-register">Price</label>
+                                        <input type="number" name="price" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                                <td rowspan="2">
+                                    <div class="flex-td flex-fill">
+                                        <label for="long-description" class="label-register">Long description</label>
+                                        <textarea name="long-description" class="input input-form-register text-area"></textarea>
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="add-padding">
+                                    <div class="flex-td">
+                                        <label for="images" class="label-register">Images</label>
+                                        <label class="custom-file-input input input-form-register input-images">
+                                            <input type="file" name="images" class="custom-file-input"/>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="flex-buttons add-buttons">
+                                        <button class="button button-cancel" type="button">Back</button>
+                                        <button class="button button-register" type="submit">Save</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>    
+        </main>
+    </body>
+</html>

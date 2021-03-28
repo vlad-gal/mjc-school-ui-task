@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+</head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="container-logo">
+                    <span class="material-icons logo md-36">
+                        menu
+                    </span>
+                    <p class="logo-title">Logo</p>
+                </div>
+                <div class="container-search">
+                    <form id="search-form" method="GET" action="">
+                        <input class="input input-search" name="search" placeholder="Search by item name"/>
+                        <select class="select">
+                            <option selected>All Categories</option>
+                            <option>Health</option>
+                            <option>Sport</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="container-info">
+                    <div class="icons">
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            local_grocery_store
+                            </span>
+                        </a>
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            favorite
+                            </span>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="#" class="link">Login</a>
+                        <label class="delimiter"> | </label>
+                        <a href="#" class="link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-register">
+            <div class="register-container">
+                <div class="register-header">
+                    <p class="register-title">Register</p>
+                </div>
+                <form class="form-register" method="POST" action="">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="td-padding">
+                                    <div class="flex-td">
+                                        <label for="login" class="label-register">Login Name</label>
+                                        <input type="text" name="login" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex-td">
+                                        <label for="first-name" class="label-register">First Name</label>
+                                        <input type="text" name="first-name" class="input input-form-register"/>       
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-padding">
+                                    <div class="flex-td">
+                                        <label for="password" class="label-register">Password</label>
+                                        <input type="password" name="password" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex-td">
+                                        <label for="repeat-password" class="label-register">Repeat Password</label>
+                                        <input type="password" name="repeat-password" class="input input-form-register"/>       
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-padding">
+                                    <div class="flex-td">
+                                        <label for="email" class="label-register">Email</label>
+                                        <input type="email" name="email" class="input input-form-register"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex-td">
+                                        <label for="address" class="label-register">Address</label>
+                                        <input type="text" name="address" class="input input-form-register"/>       
+                                    </div> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="flex-buttons">
+                                        <button class="button button-cancel" type="reset">Cancel</button>
+                                        <button class="button button-register" type="submit">Sign Up</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>    
+        </main>
+    </body>
+</html>

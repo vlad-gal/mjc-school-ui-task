@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+</head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="container-logo">
+                    <span class="material-icons logo md-36">
+                        menu
+                    </span>
+                    <p class="logo-title">Logo</p>
+                </div>
+                <div class="container-search">
+                    <form id="search-form" method="GET" action="">
+                        <input class="input input-search" name="search" placeholder="Search by item name"/>
+                        <select class="select">
+                            <option selected>All Categories</option>
+                            <option>Health</option>
+                            <option>Sport</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="container-info">
+                    <div class="icons">
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            local_grocery_store
+                            </span>
+                        </a>
+                        <a href="#" class="link">
+                            <span class="material-icons icon">
+                            favorite
+                            </span>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="#" class="link">Login</a>
+                        <label class="delimiter"> | </label>
+                        <a href="#" class="link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-login">
+            <div class="logo-circle"><h1 class="logo-h1">Logo</h1></div>
+            <form class="form-login" method="POST" action="">
+                <input type="text" name="login" class="input input-form" placeholder="Login"/>
+                <input type="password" name="password" class="input input-form" placeholder="Password"/>
+                <button class="button" type="submit">Login</button>
+            </form>
+        </main>
+    </body>
+</html>
